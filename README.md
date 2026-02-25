@@ -1,1 +1,1 @@
-https://github.com/Saboteur-exe/mesto-ad
+https://Saboteur-exe.github.io/mesto-ad/
