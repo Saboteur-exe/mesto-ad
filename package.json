@@ -1,7 +1,7 @@
 {
   "name": "mesto-ad",
   "version": "1.0.0",
-  "description": "Стартовый набор для выполнения проектной работы Место",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
