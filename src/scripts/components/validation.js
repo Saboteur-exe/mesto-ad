@@ -15,8 +15,11 @@ const hideInputError = (formElement, inputElement, validationConfig) => {
 };
 
 const checkInputValidity = (formElement, inputElement, validationConfig) => {
-  if (inputElement.validity.patternMismatch)
-    inputElement.setCustomValidity(inputElement.dataset.errorMessage);
+  if (inputElement.value.trim() === '')
+    inputElement.setCustomValidity(inputElement.validity.valueMissing ? inputElement.validationMessage : 'Поле не может состоять только из пробелов');
+  
+  else if (inputElement.validity.typeMismatch)
+    inputElement.setCustomValidity(inputElement.validationMessage);
   
   else inputElement.setCustomValidity('');
 

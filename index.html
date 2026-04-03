@@ -38,7 +38,7 @@
                 <h3 class="popup__title">Редактировать профиль</h3>
                 <form class="popup__form" name="edit-profile" novalidate>
                     <label class="popup__label">
-                        <input type="text" name="user-name" id="user-name" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2" maxlength="40" pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
+                        <input type="text" name="user-name" id="user-name" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2" maxlength="40" pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]*[a-zA-Zа-яА-ЯёЁ]+[a-zA-Zа-яА-ЯёЁ\-\s]*$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
                         <span class="popup__error" id="user-name-error"></span>
                     </label>
                     <label class="popup__label">
@@ -56,7 +56,7 @@
                 <h3 class="popup__title">Новое место</h3>
                 <form class="popup__form" name="new-place" novalidate>
                     <label class="popup__label">
-                        <input type="text" name="place-name" id="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" minlength="2" maxlength="30" pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
+                        <input type="text" name="place-name" id="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" minlength="2" maxlength="30" pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]*[a-zA-Zа-яА-ЯёЁ]+[a-zA-Zа-яА-ЯёЁ\-\s]*$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
                         <span class="popup__error" id="place-name-error"></span>
                     </label>
                     <label class="popup__label">
